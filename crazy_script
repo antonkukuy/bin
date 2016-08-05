@@ -1,0 +1,11 @@
+#!/bin/sh
+
+always_true() {
+    return 0;
+}
+
+while always_true
+do
+    echo "I just can't control myself."
+    echo "Someone stop me, please!"
+done

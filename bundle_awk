@@ -1,0 +1,9 @@
+# bundle: сгруппировать файлы в дистрибутивный пакет
+echo '# Чтобы распаковать, запустите этот файл'
+for i
+do
+    echo "echo $i 1>&2"
+    echo "cat >$i <<'End of $i'"
+    cat $i
+    echo "End of $i"
+done

@@ -1,0 +1,22 @@
+# Чтобы распаковать, запустите этот файл
+echo cx 1>&2
+cat >cx <<'End of cx'
+chmod u+x $*
+End of cx
+echo cols 1>&2
+cat >cols <<'End of cols'
+#print n cols
+pr -$* -t -l1
+End of cols
+echo lc 1>&2
+cat >lc <<'End of lc'
+wc -l $*
+End of lc
+echo lct 1>&2
+cat >lct <<'End of lct'
+ls -lct|head -$*
+End of lct
+echo lut 1>&2
+cat >lut <<'End of lut'
+ls -lut|head -$*
+End of lut

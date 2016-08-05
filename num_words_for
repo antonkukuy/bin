@@ -1,0 +1,5 @@
+#!/bin/sh
+for file
+do
+echo $file has `wc -w <$file` words
+done

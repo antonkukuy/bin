@@ -1,0 +1,2 @@
+#print n cols
+pr -$* -t -l1
