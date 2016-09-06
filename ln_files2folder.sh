@@ -20,7 +20,7 @@ do
         esac
         shift
 done
-find $1 |
+find $1 -prune |
 while read f
 do
     #dest=$(echo $f | sed "s#$1##")

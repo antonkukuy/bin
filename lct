@@ -1,1 +1,1 @@
-ls -lct|head -$*
+ls -alct --color|head -$*
